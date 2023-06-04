@@ -1,0 +1,37 @@
+{
+  "name": "happy-birthday-card",
+  "version": "3.0.2",
+  "description": "A birthday card template",
+  "main": "index.js",
+  "default": "index.html",
+  "targets": {
+    "main": false
+  },
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "deploy": "rm -rf dist/ && npm build && gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://samnickgammer.github.io/HappyBirthdayAnsu",
+  "keywords": [
+    "happy-birthday",
+    "birthday-card"
+  ],
+  "author": "SamNick",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.6.2",
+    "@parcel/transformer-sass": "^2.6.2",
+    "@parcel/transformer-webmanifest": "^2.6.2",
+    "parcel": "^2.6.2",
+    "sass": "^1.53.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^7.0.0",
+    "gh-pages": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "sharp": "^0.30.7"
+  }
+}
